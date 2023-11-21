@@ -1,6 +1,15 @@
 import streamlit as st
 import  time 
 from PIL import Image
+import matplotlib.pyplot as plt
+import random
+import numpy as np
+x = range(-4,5)
+y = [elem**2 for elem in x]
+
+plt.plot(x, y,"ro--",color="blue")
+imgg = plt.show()
+
 
 st.set_page_config(
     page_title="Galaxy Classification App",
